@@ -1,0 +1,791 @@
+2020-07-20 13:54:37,925 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-12 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 13:54:37,929 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-12 - Application started (Dev) (no global state)
+2020-07-20 13:54:38,001 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 13:54:38,002 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 13:54:38,047 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-4 - invokeBlock: 
+2020-07-20 13:54:38,047 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-4 - index: 
+2020-07-20 13:54:38,048 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-5 - list: 
+2020-07-20 13:54:45,293 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-12 - 
+
+! @7gg0apd2e - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 13:54:46,418 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-13 - 
+
+! @7gg0apeka - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 13:54:47,359 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-14 - 
+
+! @7gg0apg4f - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 13:54:48,018 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-14 - 
+
+! @7gg0aph3o - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 13:54:48,658 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-14 - 
+
+! @7gg0api2e - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 13:59:12,230 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-19 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 13:59:12,232 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-19 - Application started (Dev) (no global state)
+2020-07-20 13:59:12,236 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 13:59:12,236 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 13:59:12,239 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-4 - invokeBlock: 
+2020-07-20 13:59:12,240 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-4 - index: 
+2020-07-20 13:59:12,240 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-5 - list: 
+2020-07-20 13:59:12,271 [ERROR] from ErrorHandler in application-akka.actor.default-dispatcher-6 - 
+
+! @7gg0bei1e - Internal server error, for (GET) [/v1/posts/] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:359)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:261)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:429)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:421)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:453)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:56)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:93)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:93)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:48)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: java.lang.NullPointerException: null
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.Codecs.$anonfun$format$10(PostResourceHandler.scala:33)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OWrites$MergedOWrites$.mergeIn(Writes.scala:97)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:89)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:85)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes(Writes.scala:117)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes$(Writes.scala:115)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writes(Writes.scala:85)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.PostResource$.$anonfun$format$4(PostResourceHandler.scala:24)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$2(Writes.scala:450)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$1(Writes.scala:449)
+	at play.api.libs.json.Writes$$anon$6.writes(Writes.scala:162)
+	at play.api.libs.json.Json$.toJson(Json.scala:191)
+	at v1.post.PostController.$anonfun$index$3(PostController.scala:37)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:430)
+	... 11 common frames omitted
+2020-07-20 13:59:26,610 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-20 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 13:59:26,612 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-20 - Application started (Dev) (no global state)
+2020-07-20 13:59:26,615 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 13:59:26,615 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 13:59:26,619 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-4 - invokeBlock: 
+2020-07-20 13:59:26,619 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-4 - index: 
+2020-07-20 13:59:26,620 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-5 - list: 
+2020-07-20 14:06:22,123 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-25 - 
+
+! @7gg0cd3ni - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 14:07:14,473 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-26 - 
+
+! @7gg0cg39j - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 14:07:17,906 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-25 - 
+
+! @7gg0cg8bk - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 14:07:35,834 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-26 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 14:07:35,836 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-26 - Application started (Dev) (no global state)
+2020-07-20 14:07:35,839 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:07:35,839 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:07:35,842 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-4 - invokeBlock: 
+2020-07-20 14:07:35,842 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-4 - index: 
+2020-07-20 14:07:35,843 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-5 - list: 
+2020-07-20 14:08:22,729 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-26 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 14:08:22,731 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-26 - Application started (Dev) (no global state)
+2020-07-20 14:08:22,735 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-5 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:08:22,735 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-5 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:08:22,737 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-5 - invokeBlock: 
+2020-07-20 14:08:22,737 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-5 - index: 
+2020-07-20 14:08:22,739 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-6 - list: 
+2020-07-20 14:08:26,824 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-26 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 14:08:26,826 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-26 - Application started (Dev) (no global state)
+2020-07-20 14:08:26,829 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:08:26,829 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:08:26,831 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-4 - invokeBlock: 
+2020-07-20 14:08:26,832 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-4 - index: 
+2020-07-20 14:08:26,832 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-5 - list: 
+2020-07-20 14:08:26,843 [ERROR] from ErrorHandler in application-akka.actor.default-dispatcher-6 - 
+
+! @7gg0ck6b6 - Internal server error, for (GET) [/v1/posts/] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:359)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:261)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:429)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:421)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:453)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:56)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:93)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:93)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:48)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: java.lang.NullPointerException: null
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.codecs.$anonfun$format$10(PostResourceHandler.scala:33)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OWrites$MergedOWrites$.mergeIn(Writes.scala:97)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:89)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:85)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes(Writes.scala:117)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes$(Writes.scala:115)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writes(Writes.scala:85)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.PostResource$.$anonfun$format$4(PostResourceHandler.scala:24)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$2(Writes.scala:450)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$1(Writes.scala:449)
+	at play.api.libs.json.Writes$$anon$6.writes(Writes.scala:162)
+	at play.api.libs.json.Json$.toJson(Json.scala:191)
+	at v1.post.PostController.$anonfun$index$3(PostController.scala:37)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:430)
+	... 11 common frames omitted
+2020-07-20 14:08:28,833 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:08:28,833 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:08:28,835 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2020-07-20 14:08:28,836 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2020-07-20 14:08:28,837 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-7 - list: 
+2020-07-20 14:08:28,840 [ERROR] from ErrorHandler in application-akka.actor.default-dispatcher-6 - 
+
+! @7gg0ck9a1 - Internal server error, for (GET) [/v1/posts/] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:359)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:261)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:429)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:421)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:453)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:56)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:93)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:93)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:48)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: java.lang.NullPointerException: null
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.codecs.$anonfun$format$10(PostResourceHandler.scala:33)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OWrites$MergedOWrites$.mergeIn(Writes.scala:97)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:89)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:85)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes(Writes.scala:117)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes$(Writes.scala:115)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writes(Writes.scala:85)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.PostResource$.$anonfun$format$4(PostResourceHandler.scala:24)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$2(Writes.scala:450)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$1(Writes.scala:449)
+	at play.api.libs.json.Writes$$anon$6.writes(Writes.scala:162)
+	at play.api.libs.json.Json$.toJson(Json.scala:191)
+	at v1.post.PostController.$anonfun$index$3(PostController.scala:37)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:430)
+	... 11 common frames omitted
+2020-07-20 14:12:32,373 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-33 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 14:12:32,374 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-33 - Application started (Dev) (no global state)
+2020-07-20 14:12:32,378 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:12:32,378 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-6 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:12:32,380 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-6 - invokeBlock: 
+2020-07-20 14:12:32,381 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-6 - index: 
+2020-07-20 14:12:32,382 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-7 - list: 
+2020-07-20 14:20:59,849 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-39 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 14:20:59,850 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-39 - Application started (Dev) (no global state)
+2020-07-20 14:20:59,854 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:20:59,854 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:20:59,856 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-7 - invokeBlock: 
+2020-07-20 14:20:59,857 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-7 - index: 
+2020-07-20 14:20:59,857 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - list: 
+2020-07-20 14:20:59,868 [ERROR] from ErrorHandler in application-akka.actor.default-dispatcher-9 - 
+
+! @7gg0eb29i - Internal server error, for (GET) [/v1/posts/] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:359)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:261)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:429)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:421)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:453)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:56)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:93)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:93)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:48)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: java.lang.NullPointerException: null
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.codecs.$anonfun$format$10(PostResourceHandler.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OWrites$MergedOWrites$.mergeIn(Writes.scala:97)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:89)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:85)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes(Writes.scala:117)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes$(Writes.scala:115)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writes(Writes.scala:85)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.PostResource$.$anonfun$format$4(PostResourceHandler.scala:24)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$2(Writes.scala:450)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$1(Writes.scala:449)
+	at play.api.libs.json.Writes$$anon$6.writes(Writes.scala:162)
+	at play.api.libs.json.Json$.toJson(Json.scala:191)
+	at v1.post.PostController.$anonfun$index$3(PostController.scala:37)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:430)
+	... 11 common frames omitted
+2020-07-20 14:25:06,225 [ERROR] from play.api.http.DefaultHttpErrorHandler in play-dev-mode-akka.actor.default-dispatcher-45 - 
+
+! @7gg0ep2kf - Internal server error, for (GET) [/v1/posts] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Reference to uninitialized value f1]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:34)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.$anonfun$taskFailureHandler$1(PlayReload.scala:40)
+	at scala.Option.map(Option.scala:230)
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:35)
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:28)
+	at play.sbt.run.PlayReload$.$anonfun$compile$3(PlayReload.scala:63)
+	at scala.util.Either$LeftProjection.map(Either.scala:573)
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:63)
+	at play.sbt.run.PlayRun$.$anonfun$playRunTask$4(PlayRun.scala:78)
+	at play.runsupport.Reloader.$anonfun$reload$1(Reloader.scala:496)
+	at play.runsupport.Reloader$$anon$1.run(Reloader.scala:57)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at play.runsupport.Reloader$.play$runsupport$Reloader$$withReloaderContextClassLoader(Reloader.scala:63)
+	at play.runsupport.Reloader.reload(Reloader.scala:496)
+	at play.core.server.DevServerStart$$anon$1.get(DevServerStart.scala:141)
+	at play.core.server.AkkaHttpServer.handleRequest(AkkaHttpServer.scala:301)
+	at play.core.server.AkkaHttpServer.$anonfun$createServerBinding$1(AkkaHttpServer.scala:191)
+	at akka.stream.impl.fusing.MapAsync$$anon$30.onPush(Ops.scala:1285)
+	at akka.stream.impl.fusing.GraphInterpreter.processPush(GraphInterpreter.scala:541)
+	at akka.stream.impl.fusing.GraphInterpreter.execute(GraphInterpreter.scala:423)
+	at akka.stream.impl.fusing.GraphInterpreterShell.runBatch(ActorGraphInterpreter.scala:625)
+	at akka.stream.impl.fusing.GraphInterpreterShell$AsyncInput.execute(ActorGraphInterpreter.scala:502)
+	at akka.stream.impl.fusing.GraphInterpreterShell.processEvent(ActorGraphInterpreter.scala:600)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.akka$stream$impl$fusing$ActorGraphInterpreter$$processEvent(ActorGraphInterpreter.scala:769)
+	at akka.stream.impl.fusing.ActorGraphInterpreter$$anonfun$receive$1.applyOrElse(ActorGraphInterpreter.scala:784)
+	at akka.actor.Actor.aroundReceive(Actor.scala:535)
+	at akka.actor.Actor.aroundReceive$(Actor.scala:533)
+	at akka.stream.impl.fusing.ActorGraphInterpreter.aroundReceive(ActorGraphInterpreter.scala:691)
+	at akka.actor.ActorCell.receiveMessage(ActorCell.scala:575)
+	at akka.actor.ActorCell.invoke(ActorCell.scala:545)
+	at akka.dispatch.Mailbox.processMailbox(Mailbox.scala:270)
+	at akka.dispatch.Mailbox.run(Mailbox.scala:231)
+	at akka.dispatch.Mailbox.exec(Mailbox.scala:243)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+2020-07-20 14:26:30,172 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-46 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 14:26:30,173 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-46 - Application started (Dev) (no global state)
+2020-07-20 14:26:30,175 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:26:30,175 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:26:30,178 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-4 - invokeBlock: 
+2020-07-20 14:26:30,178 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-4 - index: 
+2020-07-20 14:26:30,179 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-5 - list: 
+2020-07-20 14:29:17,610 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:29:17,610 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-7 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:29:17,611 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-7 - invokeBlock: 
+2020-07-20 14:29:17,612 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-7 - index: 
+2020-07-20 14:29:17,612 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - list: 
+2020-07-20 14:29:47,099 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-54 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2020-07-20 14:29:47,100 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-54 - Application started (Dev) (no global state)
+2020-07-20 14:29:47,104 [WARN] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted.
+2020-07-20 14:29:47,104 [INFO] from play.api.mvc.DefaultJWTCookieDataCodec in application-akka.actor.default-dispatcher-4 - The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message.
+2020-07-20 14:29:47,106 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-4 - invokeBlock: 
+2020-07-20 14:29:47,106 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-4 - index: 
+2020-07-20 14:29:47,107 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-5 - list: 
+2020-07-20 14:29:47,117 [ERROR] from ErrorHandler in application-akka.actor.default-dispatcher-6 - 
+
+! @7gg0ff28e - Internal server error, for (GET) [/v1/posts/] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:359)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:261)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:429)
+	at play.core.server.AkkaHttpServer$$anonfun$2.applyOrElse(AkkaHttpServer.scala:421)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:453)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:56)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.$anonfun$run$1(BatchingExecutor.scala:93)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:94)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:93)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:48)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(ForkJoinExecutorConfigurator.scala:48)
+	at java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:289)
+	at java.util.concurrent.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1056)
+	at java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1692)
+	at java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:157)
+Caused by: java.lang.NullPointerException: null
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.codecs.$anonfun$format$10(PostResourceHandler.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.PathWrites.$anonfun$at$3(JsConstraints.scala:188)
+	at play.api.libs.json.OWrites$$anon$4.writes(Writes.scala:132)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OWrites$MergedOWrites$.mergeIn(Writes.scala:97)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:89)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writeFields(Writes.scala:85)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes(Writes.scala:117)
+	at play.api.libs.json.OWrites$OWritesFromFields.writes$(Writes.scala:115)
+	at play.api.libs.json.OWrites$MergedOWrites$$anon$1.writes(Writes.scala:85)
+	at play.api.libs.json.OFormat$$anon$4.writes(Format.scala:44)
+	at play.api.libs.json.OFormat$$anon$2.$anonfun$inmap$2(Format.scala:27)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at v1.post.PostResource$.$anonfun$format$4(PostResourceHandler.scala:24)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:38)
+	at play.api.libs.json.OFormat$$anon$3.writes(Format.scala:35)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$2(Writes.scala:450)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at play.api.libs.json.LowPriorityWrites.$anonfun$iterableWrites2$1(Writes.scala:449)
+	at play.api.libs.json.Writes$$anon$6.writes(Writes.scala:162)
+	at play.api.libs.json.Json$.toJson(Json.scala:191)
+	at v1.post.PostController.$anonfun$index$3(PostController.scala:37)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:430)
+	... 11 common frames omitted

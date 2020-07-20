@@ -1,0 +1,81 @@
+package v1.post
+
+import javax.inject.{Inject, Provider}
+
+import play.api.MarkerContext
+
+import scala.concurrent.{ExecutionContext, Future}
+import play.api.libs.json._
+
+/**
+  * DTO for displaying post information.
+  */
+case class PostResource(id: String,
+                        link: String,
+                        title: String,
+                        body: String,
+                        f: Field = Field(Field1("foo")))
+
+object PostResource {
+
+  /**
+    * Mapping to read/write a PostResource out as a JSON value.
+    */
+  implicit val format: Format[PostResource] = Json.format
+}
+
+case class Field(f1: Field1)
+case class Field1(f1: String)
+
+//object Field {
+//  implicit val f1: Format[Field1] = Json.format
+//  implicit val format: Format[Field] = Json.format
+//}
+//
+object Field extends codecs {}
+trait codecs {
+
+  implicit val format: Format[Field] = Json.format
+  implicit val f1: Format[Field1] = Json.format
+}
+
+/**
+  * Controls access to the backend data, returning [[PostResource]]
+  */
+class PostResourceHandler @Inject()(
+  routerProvider: Provider[PostRouter],
+  postRepository: PostRepository
+)(implicit ec: ExecutionContext) {
+
+  def create(
+    postInput: PostFormInput
+  )(implicit mc: MarkerContext): Future[PostResource] = {
+    val data = PostData(PostId("999"), postInput.title, postInput.body)
+    // We don't actually create the post, so return what we have
+    postRepository.create(data).map { id =>
+      createPostResource(data)
+    }
+  }
+
+  def lookup(
+    id: String
+  )(implicit mc: MarkerContext): Future[Option[PostResource]] = {
+    val postFuture = postRepository.get(PostId(id))
+    postFuture.map { maybePostData =>
+      maybePostData.map { postData =>
+        createPostResource(postData)
+      }
+    }
+  }
+
+  def find(implicit mc: MarkerContext): Future[Iterable[PostResource]] = {
+    postRepository.list().map { postDataList =>
+      postDataList.map(postData => createPostResource(postData))
+    }
+  }
+
+  private def createPostResource(p: PostData): PostResource = {
+    PostResource(p.id.toString, routerProvider.get.link(p.id), p.title, p.body)
+  }
+
+}
